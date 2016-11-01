@@ -1,0 +1,4 @@
+#!/usr/bin/with-contenv sh
+
+# For the sake of gratuitous paranoia, we'll run as nobody.
+exec s6-setuidgid nobody node /app/reporter.js;

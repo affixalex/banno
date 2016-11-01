@@ -1,0 +1,44 @@
+{
+  "author": "Alex Caudill",
+  "name": "banno",
+  "description": "banno",
+  "version": "0.0.1",
+  "homepage": "https://github.com/hypoalex/banno",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">= 5.10",
+    "npm": "latest"
+  },
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "bower": "latest",
+    "brunch": "latest",
+    "bunyan": "^1.8.0",
+    "clean-css-brunch": "latest",
+    "co-body": "^4.0.0",
+    "css-brunch": "latest",
+    "emoji-data": "^0.2.0",
+    "gzip-brunch": "latest",
+    "html-minifier-brunch": "hypoalex/html-minifier-brunch",
+    "javascript-brunch": "latest",
+    "koa": "^1.2.0",
+    "koa-socket": "^4.3.0",
+    "koa-static": "^2.0.0",
+    "less-brunch": "^2.6.0",
+    "lodash": "^4.8.1",
+    "node-static": "latest",
+    "read-components": "latest",
+    "rethinkdbdash": "^2.2.20",
+    "socket.io": "^1.4.5",
+    "twitter": "^1.2.5",
+    "uglify-js-brunch": "latest"
+  },
+  "scripts": {
+    "install": "./node_modules/bower/bin/bower install --allow-root",
+    "postinstall": "./node_modules/brunch/bin/brunch build --production",
+    "start": "node ./server/server.js"
+  }
+}

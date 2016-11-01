@@ -1,0 +1,16 @@
+rethinkdb:
+  image: rethinkdb
+  expose:
+    - "28015"
+    
+reporter:
+  build: ./reporter
+  links:
+    - rethinkdb
+
+web:
+  build: ./web
+  ports:
+    - "4000:4000"
+  links:
+    - rethinkdb

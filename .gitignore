@@ -1,0 +1,5 @@
+web/app/npm-debug.log
+web/app/node_modules
+web/app/bower_components
+web/app/public/*
+consumer/node_modules

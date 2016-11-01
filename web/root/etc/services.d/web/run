@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Be sure to set our cwd correctly..
+cd /app
+# start our node.js application
+exec node server/server.js
